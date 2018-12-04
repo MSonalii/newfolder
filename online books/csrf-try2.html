@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Csrf Example</title>
+</head>
+<body>
+	<h2>Edit Book Details</h2>
+	<!-- <form class="login-form" action="http://localhost:5000/user/edit/5b617ac6635b852e94a655bf" method="get">
+		<button>
+			Submit
+		</button>
+	</form> -->
+	<form class="login-form" action="http://localhost:5000/book/editBook" method="post">
+		<table>
+			<tr>
+				<td style="margin: 5px;"><label><b>Book Name</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="name" placeholder="Book Name"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Publisher</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="publisher" placeholder="Genere"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Price</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="price" placeholder="Price"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Genere</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="genere" placeholder="Publisher"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Book ID</b></label></td>
+				<td>
+					<input type="text" name="book_id" placeholder="book id"/>
+				</td>
+			</tr>
+		</table>
+		<div>
+			<button>Submit</button>
+		</div>	
+    </form>
+</body>
+</html>

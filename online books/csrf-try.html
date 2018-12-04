@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Csrf Example</title>
+	<script type="text/javascript" src="./csrf.js"></script>
+</head>
+<body>
+	<h2>Edit Book Details</h2>
+	<form class="login-form" action="http://localhost:5000/book/addBook" method="POST">
+		<input type="hidden" name="_csrf" value="{{csrfToken}}">
+		<table>
+			<tr>
+				<td style="margin: 5px;"><label><b>Book Name</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="name" placeholder="Book Name"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Publisher</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="publisher" placeholder="Genere"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Price</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="price" placeholder="Price"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Genere</b></label></td>
+				<td style="margin: 5px;"><input type="text" name="genere" placeholder="Publisher"/></td>
+			</tr>
+			<tr>
+				<td style="margin: 5px;"><label><b>Author</b></label></td>
+				<td>
+					<select class="form-control" name="author">
+						<option value="5b617ac6635b852e94a655bf">Sonali Maid</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<div>
+			<button>Submit</button>
+		</div>	
+    </form>
+</body>
+</html>

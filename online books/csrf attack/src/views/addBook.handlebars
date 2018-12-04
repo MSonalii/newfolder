@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Add Book in list</h1>
+        <form class="form-horizontal" method="POST" role="form" id="addBooks" action="http://localhost:5000/book/addBook">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Book Name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" name="name" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Publisher Name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" name="publisher" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Price:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" name="price" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Genre:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="" name="genere">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Select Author:</label>
+            <div class="col-md-8">
+              	<select class="form-control" name="author">
+						<option value="5b617ac6635b852e94a655bf">Sonali Maid</option>
+				</select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="submit" id="addBook" class="btn btn-primary" value="Add Book">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
